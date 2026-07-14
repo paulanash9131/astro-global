@@ -6,11 +6,11 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
 *{box-sizing:border-box}
-body{margin:0;background:#f6f7fb;color:#16181d;font-family:'Inter',system-ui,sans-serif;line-height:1.6;font-size:16px}
+body{margin:0;background:#f6f7fb;color:#16181d;font-family:'Inter',system-ui,sans-serif;line-height:1.65;font-size:16px}
 .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
 header{background:linear-gradient(135deg,#4f2d7f,#8e44ad 55%,#c0392b);color:#fff;padding:38px 0 30px}
 header h1{margin:0 0 8px;font-size:32px;font-weight:800;letter-spacing:-.02em}
-header p{margin:0;font-size:17px;opacity:.95;max-width:760px}
+header p{margin:0;font-size:17px;opacity:.95;max-width:780px}
 .how{background:#fff8db;border:2px solid #f1c40f;border-radius:12px;padding:16px 20px;margin:24px 0;font-size:15.5px}
 .how b{color:#7d6608}
 .blk{background:#fff;border:1px solid #dfe3ec;border-radius:14px;margin:26px 0;overflow:hidden;box-shadow:0 2px 10px rgba(20,25,40,.06)}
@@ -24,65 +24,70 @@ header p{margin:0;font-size:17px;opacity:.95;max-width:760px}
 table{border-collapse:collapse;width:100%;font-size:14.5px}
 footer{padding:36px 0 60px;color:#6b7280;font-size:14px;text-align:center}
 a{color:#8e44ad}
+.words{background:#fff;border:1px solid #dfe3ec;border-radius:14px;padding:20px 24px;margin:26px 0}
+.words h3{margin:0 0 10px;font-size:19px}
+.words dl{margin:0}
+.words dt{font-weight:700;color:#4f2d7f;margin-top:12px}
+.words dd{margin:2px 0 0 0;color:#374151}
 </style>
 </head><body>
 
 <header><div class="wrap">
 <h1>📋 Copy → Paste into Google Sheets</h1>
-<p>Every table below is pre-formatted with colours and highlights. Hit <b>Copy</b>, then paste straight into your Google Sheet — the colours, bold text and cells all carry across. Nothing to reformat.</p>
+<p>Every table below is ready to go, with colours already set. Click <b>Copy</b>, then paste it into your Google Sheet. The colours and bold text come with it. You don't need to fix anything.</p>
 </div></header>
 
 <div class="wrap">
 
 <div class="how">
-<b>How to use:</b> Click the green <b>Copy table</b> button → open your Google Sheet → click the cell where you want it to start → press <b>Ctrl+V</b> (or <b>Cmd+V</b> on Mac). The formatting comes with it. Paste each table onto its own tab, or stack them down one sheet with a blank row between.
+<b>How to use this page:</b> Click the green <b>Copy table</b> button → open your Google Sheet → click the box where you want the table to start → press <b>Ctrl+V</b> (or <b>Cmd+V</b> on a Mac). That's it. Put each table on its own tab, or put them one under the other with an empty row in between.
 </div>
 
 <!-- ================= 1. MASTER PLAN ================= -->
 <div class="blk">
-<div class="bar"><h2>1 · The Master Plan<span class="sub">The whole build, phase by phase, with who does what</span></h2><button class="copy" data-t="t1">📋 Copy table</button></div>
+<div class="bar"><h2>1 · The Plan<span class="sub">What we do, when we do it, and who does it</span></h2><button class="copy" data-t="t1">📋 Copy table</button></div>
 <div class="scroll">
 <table id="t1">
 <tr>
-<th style="background:#4f2d7f;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">PHASE</th>
+<th style="background:#4f2d7f;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">STEP</th>
 <th style="background:#4f2d7f;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">WHEN</th>
-<th style="background:#4f2d7f;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">WHAT HAPPENS</th>
-<th style="background:#4f2d7f;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">WHO</th>
-<th style="background:#4f2d7f;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">STATUS</th>
+<th style="background:#4f2d7f;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">WHAT WE DO</th>
+<th style="background:#4f2d7f;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">WHO DOES IT</th>
+<th style="background:#4f2d7f;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">DONE?</th>
 </tr>
 <tr>
-<td style="background:#fdecea;color:#c0392b;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">1 · FOUNDATIONS</td>
-<td style="padding:9px 12px;border:1px solid #dfe3ec">Weeks 1–4</td>
-<td style="padding:9px 12px;border:1px solid #dfe3ec">Partnership agreement signed. US LLC + EIN filed. Stripe + backup processor. All legal pages + consent flows.</td>
-<td style="padding:9px 12px;border:1px solid #dfe3ec">Dominic (agreement) / Me (everything else)</td>
+<td style="background:#fdecea;color:#c0392b;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">STEP 1 — SET UP THE COMPANY</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec">Week 1 to 4</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec">Sign the deal between the two partners. Open a US company. Get a tax number. Open a bank account. Set up two ways to take card payments. Write the rules pages for the website.</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec">Dominic signs the deal. I do the rest.</td>
 <td style="background:#fff3cd;color:#7d6608;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">NOT STARTED</td>
 </tr>
 <tr>
-<td style="background:#fef5e7;color:#b9770e;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">2 · BUILD</td>
-<td style="padding:9px 12px;border:1px solid #dfe3ec">Weeks 3–8</td>
-<td style="padding:9px 12px;border:1px solid #dfe3ec">Website + free birth-chart tool. Booking + payments. CRM + email. Phone/WhatsApp. Hire support #1. Ad accounts verified.</td>
-<td style="padding:9px 12px;border:1px solid #dfe3ec">Me (build) / Dominic (hire)</td>
+<td style="background:#fef5e7;color:#b9770e;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">STEP 2 — BUILD THE WEBSITE</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec">Week 3 to 8</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec">Build the website. Add a free birth-chart tool so people give us their email. Set up the booking page so clients can pay when they book. Set up email, phone and WhatsApp. Hire the first helper.</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec">I build it. Dominic hires the helper.</td>
 <td style="background:#fff3cd;color:#7d6608;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">NOT STARTED</td>
 </tr>
 <tr>
-<td style="background:#eafaf1;color:#1e7e34;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">3 · LAUNCH</td>
-<td style="padding:9px 12px;border:1px solid #dfe3ec">Weeks 8–12</td>
-<td style="padding:9px 12px;border:1px solid #dfe3ec">Warm list + referrals first (free). Short-form content starts. Small paid ads. 90-day validation gate.</td>
-<td style="padding:9px 12px;border:1px solid #dfe3ec">Me (ads) / Partner (on camera)</td>
+<td style="background:#eafaf1;color:#1e7e34;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">STEP 3 — GET THE FIRST CLIENTS</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec">Week 8 to 12</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec">First, message the people he has already read for. Ask them to come back and to tell friends. Start posting short videos of him. Only then spend a small amount on ads.</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec">I run the ads. He appears in the videos.</td>
 <td style="background:#fff3cd;color:#7d6608;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">NOT STARTED</td>
 </tr>
 <tr>
-<td style="background:#eaf2fb;color:#1a5490;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">4 · SUBSCRIPTIONS</td>
-<td style="padding:9px 12px;border:1px solid #dfe3ec">Months 3–6</td>
-<td style="padding:9px 12px;border:1px solid #dfe3ec">3 subscription tiers live. Founders' Circle LTD: 150 seats × $999 = ~$150K.</td>
-<td style="padding:9px 12px;border:1px solid #dfe3ec">Me</td>
+<td style="background:#eaf2fb;color:#1a5490;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">STEP 4 — MONTHLY PLANS</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec">Month 3 to 6</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec">Start selling monthly plans, so clients pay every month instead of one time. Also sell 150 "founder" spots at $999 each. That brings in about $150,000 at once.</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec">I set it up</td>
 <td style="background:#fff3cd;color:#7d6608;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">NOT STARTED</td>
 </tr>
 <tr>
-<td style="background:#f4ecf7;color:#6c3483;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">5 · GEMSTONES</td>
-<td style="padding:9px 12px;border:1px solid #dfe3ec">Months 6–12</td>
-<td style="padding:9px 12px;border:1px solid #dfe3ec">Certified stones recommended inside consultations, fulfilled by our store. Dropship first, own stock later.</td>
-<td style="padding:9px 12px;border:1px solid #dfe3ec">Me (store) / Partner (recommends)</td>
+<td style="background:#f4ecf7;color:#6c3483;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">STEP 5 — SELL GEMSTONES</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec">Month 6 to 12</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec">When he tells a client which stone suits them, we sell them that stone. Every stone comes with a lab paper proving it is real. We do not hold stock at first — we order it only after someone buys.</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec">I build the shop. He suggests the stones.</td>
 <td style="background:#fff3cd;color:#7d6608;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">NOT STARTED</td>
 </tr>
 </table>
@@ -90,239 +95,258 @@ a{color:#8e44ad}
 
 <!-- ================= 2. PRICES ================= -->
 <div class="blk">
-<div class="bar"><h2>2 · Service Prices — US · UK · Canada<span class="sub">Built from real prices pulled off live astrologer booking pages</span></h2><button class="copy" data-t="t2">📋 Copy table</button></div>
+<div class="bar"><h2>2 · Our Prices — America, UK, Canada<span class="sub">Based on what other real astrologers charge today</span></h2><button class="copy" data-t="t2">📋 Copy table</button></div>
 <div class="scroll">
 <table id="t2">
 <tr>
-<th style="background:#1a5490;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">SERVICE</th>
-<th style="background:#1a5490;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">FORMAT</th>
-<th style="background:#1a5490;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:center">🇺🇸 USD</th>
-<th style="background:#1a5490;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:center">🇬🇧 GBP</th>
-<th style="background:#1a5490;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:center">🇨🇦 CAD</th>
+<th style="background:#1a5490;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">WHAT WE SELL</th>
+<th style="background:#1a5490;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">HOW IT WORKS</th>
+<th style="background:#1a5490;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:center">🇺🇸 USA</th>
+<th style="background:#1a5490;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:center">🇬🇧 UK</th>
+<th style="background:#1a5490;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:center">🇨🇦 CANADA</th>
 </tr>
 <tr>
-<td style="background:#eafaf1;color:#1e7e34;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">Discovery Reading (entry offer)</td>
-<td style="padding:9px 12px;border:1px solid #dfe3ec">30 min live + recording</td>
+<td style="background:#eafaf1;color:#1e7e34;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">First reading (cheap, to try us)</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec">30 minutes on video. They also get the recording.</td>
 <td style="background:#eafaf1;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec;text-align:center">$95</td>
 <td style="background:#eafaf1;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec;text-align:center">£75</td>
 <td style="background:#eafaf1;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec;text-align:center">CA$129</td>
 </tr>
 <tr>
-<td style="background:#fff3cd;color:#7d6608;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">⭐ Full Natal Chart Consultation</td>
-<td style="padding:9px 12px;border:1px solid #dfe3ec">60 min + recording + written summary</td>
+<td style="background:#fff3cd;color:#7d6608;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">⭐ Full birth chart reading (our main one)</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec">60 minutes on video + recording + a short written note</td>
 <td style="background:#fff3cd;font-weight:800;font-size:16px;padding:9px 12px;border:1px solid #dfe3ec;text-align:center">$195</td>
 <td style="background:#fff3cd;font-weight:800;font-size:16px;padding:9px 12px;border:1px solid #dfe3ec;text-align:center">£150</td>
 <td style="background:#fff3cd;font-weight:800;font-size:16px;padding:9px 12px;border:1px solid #dfe3ec;text-align:center">CA$265</td>
 </tr>
 <tr>
-<td style="background:#f4ecf7;color:#6c3483;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">Deep-Dive / Vedic Consultation</td>
-<td style="padding:9px 12px;border:1px solid #dfe3ec">90 min + recording + remedies note</td>
+<td style="background:#f4ecf7;color:#6c3483;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">Long reading (Indian / Vedic style)</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec">90 minutes + recording + a note on which stones suit them</td>
 <td style="background:#f4ecf7;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec;text-align:center">$295</td>
 <td style="background:#f4ecf7;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec;text-align:center">£225</td>
 <td style="background:#f4ecf7;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec;text-align:center">CA$395</td>
 </tr>
 <tr>
-<td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Compatibility / Relationship</td>
-<td style="padding:9px 12px;border:1px solid #dfe3ec">75 min live, both charts</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Love / couple reading</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec">75 minutes. He reads both people's charts together.</td>
 <td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center;font-weight:600">$245</td>
 <td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center;font-weight:600">£185</td>
 <td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center;font-weight:600">CA$329</td>
 </tr>
 <tr>
-<td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Career &amp; Timing Session</td>
-<td style="padding:9px 12px;border:1px solid #dfe3ec">60 min live</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Job / career reading</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec">60 minutes on video</td>
 <td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center;font-weight:600">$195</td>
 <td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center;font-weight:600">£150</td>
 <td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center;font-weight:600">CA$265</td>
 </tr>
 <tr>
-<td style="background:#eaf2fb;color:#1a5490;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">Written / Recorded Reading (no calendar needed)</td>
-<td style="padding:9px 12px;border:1px solid #dfe3ec">Delivered in 5 days</td>
+<td style="background:#eaf2fb;color:#1a5490;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">Written or recorded reading (no live call)</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec">He records it alone and sends it in 5 days. No meeting needed, so he can do many.</td>
 <td style="background:#eaf2fb;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec;text-align:center">$95–145</td>
 <td style="background:#eaf2fb;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec;text-align:center">£75–110</td>
 <td style="background:#eaf2fb;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec;text-align:center">CA$129–195</td>
 </tr>
 <tr>
-<td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Follow-up (existing clients)</td>
-<td style="padding:9px 12px;border:1px solid #dfe3ec">30 min live</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Come-back reading (for old clients)</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec">30 minutes on video</td>
 <td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center;font-weight:600">$85</td>
 <td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center;font-weight:600">£65</td>
 <td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center;font-weight:600">CA$115</td>
 </tr>
 <tr>
-<td colspan="5" style="background:#fdecea;color:#c0392b;font-weight:700;padding:10px 12px;border:1px solid #dfe3ec">⚠️ NO free readings that turn into a bill. The entry offer is a real, honest $95. That exact "free reading" funnel is what the FTC used to destroy Miss Cleo — and what it sued Nebula's parent over in June 2026.</td>
+<td colspan="5" style="background:#fdecea;color:#c0392b;font-weight:700;padding:10px 12px;border:1px solid #dfe3ec">⚠️ WE NEVER SAY "FREE READING" AND THEN CHARGE THEM. Our cheap first reading is $95, and we say $95. A famous US company called Miss Cleo did the "free" trick and the government shut them down and made them cancel $500 million of customer bills. Another company (Nebula) got sued for the same thing last month.</td>
 </tr>
 </table>
 </div></div>
 
 <!-- ================= 3. SUBSCRIPTIONS ================= -->
 <div class="blk">
-<div class="bar"><h2>3 · Subscriptions + Founders' Circle<span class="sub">Launch after 100 clients served — not before</span></h2><button class="copy" data-t="t3">📋 Copy table</button></div>
+<div class="bar"><h2>3 · Monthly Plans<span class="sub">Start these only after we have served about 100 clients</span></h2><button class="copy" data-t="t3">📋 Copy table</button></div>
 <div class="scroll">
 <table id="t3">
 <tr>
-<th style="background:#6c3483;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">TIER</th>
-<th style="background:#6c3483;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:center">MONTHLY</th>
-<th style="background:#6c3483;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:center">HALF-YEAR</th>
-<th style="background:#6c3483;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:center">YEARLY</th>
-<th style="background:#6c3483;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">WHAT THEY GET</th>
+<th style="background:#6c3483;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">PLAN NAME</th>
+<th style="background:#6c3483;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:center">PAY MONTHLY</th>
+<th style="background:#6c3483;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:center">PAY 6 MONTHS</th>
+<th style="background:#6c3483;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:center">PAY 1 YEAR</th>
+<th style="background:#6c3483;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">WHAT THE CLIENT GETS</th>
 </tr>
 <tr>
-<td style="background:#eaf2fb;color:#1a5490;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">STARGAZER</td>
+<td style="background:#eaf2fb;color:#1a5490;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">BASIC</td>
 <td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center;font-weight:700">$19</td>
 <td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center">$99</td>
 <td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center">$179</td>
-<td style="padding:9px 12px;border:1px solid #dfe3ec">Personalised monthly forecast from THEIR chart (not a generic horoscope), 1 async question/month, event guides</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec">Every month they get a short written reading made from THEIR OWN birth chart (not a copy-paste horoscope). They can also ask 1 question a month by message.</td>
 </tr>
 <tr>
-<td style="background:#eafaf1;color:#1e7e34;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">NAVIGATOR ⭐ push this one</td>
+<td style="background:#eafaf1;color:#1e7e34;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">MIDDLE ⭐ push this one</td>
 <td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center;font-weight:700">$79</td>
 <td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center">$419</td>
 <td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center">$749</td>
-<td style="padding:9px 12px;border:1px solid #dfe3ec">Stargazer + a 45-min live session each quarter + priority booking + 10% off extra sessions</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec">Everything in Basic, plus one 45-minute video call every 3 months. They also get booked before other people, and 10% off any extra reading.</td>
 </tr>
 <tr>
-<td style="background:#f4ecf7;color:#6c3483;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">INNER CIRCLE (cap ~40 seats)</td>
+<td style="background:#f4ecf7;color:#6c3483;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">TOP (only 40 spots)</td>
 <td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center;font-weight:700">$199</td>
 <td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center">$1,049</td>
 <td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center">$1,899</td>
-<td style="padding:9px 12px;border:1px solid #dfe3ec">Monthly 45-min session + async voice-note questions + first access to everything new</td>
+<td style="padding:9px 12px;border:1px solid #dfe3ec">A 45-minute video call EVERY month, plus they can send him voice messages with questions. Only 40 people can join, because his time is limited.</td>
 </tr>
 <tr>
-<td style="background:#fff3cd;color:#7d6608;font-weight:800;font-size:16px;padding:11px 12px;border:1px solid #dfe3ec">🏆 FOUNDERS' CIRCLE (LTD)</td>
-<td colspan="3" style="background:#fff3cd;color:#7d6608;font-weight:800;font-size:16px;padding:11px 12px;border:1px solid #dfe3ec;text-align:center">150 seats × $999 one-time = ~$149,850</td>
-<td style="background:#fff3cd;color:#7d6608;font-weight:700;padding:11px 12px;border:1px solid #dfe3ec">Lifetime Stargazer content + 3 live 45-min sessions (usable within 24 months — FINITE, not unlimited) + permanent 20% off everything + founding-member status</td>
+<td style="background:#fff3cd;color:#7d6608;font-weight:800;font-size:16px;padding:11px 12px;border:1px solid #dfe3ec">🏆 FOUNDER SPOTS (pay once, keep forever)</td>
+<td colspan="3" style="background:#fff3cd;color:#7d6608;font-weight:800;font-size:16px;padding:11px 12px;border:1px solid #dfe3ec;text-align:center">150 spots × $999 each = about $149,850</td>
+<td style="background:#fff3cd;color:#7d6608;font-weight:700;padding:11px 12px;border:1px solid #dfe3ec">They pay $999 one time and keep the Basic plan for life. They also get 3 video calls (they must use them within 2 years — NOT unlimited), 20% off everything forever, and a "founder" badge.</td>
 </tr>
 <tr>
-<td colspan="5" style="background:#fdecea;color:#c0392b;font-weight:700;padding:10px 12px;border:1px solid #dfe3ec">⚠️ BILLING RULES (card-network law — free to follow, fatal to ignore): price shown at checkout exactly as charged · receipt email with a CANCEL LINK · reminder 7 days before any charge · one-click cancel in the account · NO auto-converting free trials.</td>
+<td colspan="5" style="background:#fdecea;color:#c0392b;font-weight:700;padding:10px 12px;border:1px solid #dfe3ec">⚠️ PAYMENT RULES WE MUST FOLLOW (Visa and Mastercard require this — it costs us nothing, but breaking it can get our payments shut off):<br>1. Show the exact price before they pay. No surprises.<br>2. Email them a receipt that has a CANCEL link inside it.<br>3. Email them 7 days BEFORE we take money again.<br>4. Let them cancel with one click on the website. Never force them to call or email us.<br>5. Never start a free trial that quietly turns into a paid plan.</td>
 </tr>
 </table>
 </div></div>
 
 <!-- ================= 4. MONEY ================= -->
 <div class="blk">
-<div class="bar"><h2>4 · The Money — Costs &amp; Projection<span class="sub">Honest numbers. Projection is a target, not a promise.</span></h2><button class="copy" data-t="t4">📋 Copy table</button></div>
+<div class="bar"><h2>4 · The Money<span class="sub">What we spend, and what we hope to earn</span></h2><button class="copy" data-t="t4">📋 Copy table</button></div>
 <div class="scroll">
 <table id="t4">
 <tr>
-<th colspan="3" style="background:#1e7e34;color:#ffffff;font-size:16px;font-weight:800;padding:11px 12px;border:1px solid #ffffff;text-align:left">💰 STARTUP COST (one-off)</th>
+<th colspan="3" style="background:#1e7e34;color:#ffffff;font-size:16px;font-weight:800;padding:11px 12px;border:1px solid #ffffff;text-align:left">💰 MONEY WE SPEND ONE TIME, TO START</th>
 </tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">US LLC filing (Wyoming)</td><td colspan="2" style="padding:9px 12px;border:1px solid #dfe3ec;text-align:right;font-weight:700">$100</td></tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Registered agent (year 1)</td><td colspan="2" style="padding:9px 12px;border:1px solid #dfe3ec;text-align:right;font-weight:700">$25–100</td></tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">EIN (US tax ID) — takes 4–8 weeks, file it FIRST</td><td colspan="2" style="padding:9px 12px;border:1px solid #dfe3ec;text-align:right;font-weight:700">FREE</td></tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Domain</td><td colspan="2" style="padding:9px 12px;border:1px solid #dfe3ec;text-align:right;font-weight:700">$10–40</td></tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Website, legal pages, contracts</td><td colspan="2" style="padding:9px 12px;border:1px solid #dfe3ec;text-align:right;font-weight:700">$0 — I build these</td></tr>
-<tr><td style="background:#eafaf1;color:#1e7e34;font-weight:800;font-size:16px;padding:11px 12px;border:1px solid #dfe3ec">TOTAL TO BE LEGALLY LIVE</td><td colspan="2" style="background:#eafaf1;color:#1e7e34;font-weight:800;font-size:16px;padding:11px 12px;border:1px solid #dfe3ec;text-align:right">$150 – $550</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Open the US company (Wyoming state)</td><td colspan="2" style="padding:9px 12px;border:1px solid #dfe3ec;text-align:right;font-weight:700">$100</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Local address the state requires us to have (first year)</td><td colspan="2" style="padding:9px 12px;border:1px solid #dfe3ec;text-align:right;font-weight:700">$25–100</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">US tax number — free, but takes 4 to 8 weeks. WE APPLY FIRST, DAY ONE.</td><td colspan="2" style="padding:9px 12px;border:1px solid #dfe3ec;text-align:right;font-weight:700">FREE</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Website address (domain name)</td><td colspan="2" style="padding:9px 12px;border:1px solid #dfe3ec;text-align:right;font-weight:700">$10–40</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Website, rules pages, contracts</td><td colspan="2" style="padding:9px 12px;border:1px solid #dfe3ec;text-align:right;font-weight:700">$0 — I make these</td></tr>
+<tr><td style="background:#eafaf1;color:#1e7e34;font-weight:800;font-size:16px;padding:11px 12px;border:1px solid #dfe3ec">TOTAL TO BE OPEN AND LEGAL</td><td colspan="2" style="background:#eafaf1;color:#1e7e34;font-weight:800;font-size:16px;padding:11px 12px;border:1px solid #dfe3ec;text-align:right">$150 – $550</td></tr>
 
-<tr><th colspan="3" style="background:#b9770e;color:#ffffff;font-size:16px;font-weight:800;padding:11px 12px;border:1px solid #ffffff;text-align:left">📆 MONTHLY BURN</th></tr>
-<tr><th style="background:#fef5e7;color:#b9770e;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec;text-align:left">LINE</th><th style="background:#fef5e7;color:#b9770e;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec;text-align:center">LEAN START</th><th style="background:#fef5e7;color:#b9770e;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec;text-align:center">FULL SPEED</th></tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec">Tools (booking, Zoom, email, phone, hosting)</td><td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center">$120</td><td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center">$300</td></tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec">Support staff</td><td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center">$900 (1 person)</td><td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center">$2,800 (2 people)</td></tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec">Paid ads</td><td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center">$1,800 ($60/day)</td><td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center">$4,800 ($160/day)</td></tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec">Compliance / content</td><td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center">$50</td><td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center">$900</td></tr>
-<tr><td style="background:#fef5e7;color:#b9770e;font-weight:800;font-size:16px;padding:11px 12px;border:1px solid #dfe3ec">MONTHLY TOTAL</td><td style="background:#fef5e7;color:#b9770e;font-weight:800;font-size:16px;padding:11px 12px;border:1px solid #dfe3ec;text-align:center">~$2,900</td><td style="background:#fef5e7;color:#b9770e;font-weight:800;font-size:16px;padding:11px 12px;border:1px solid #dfe3ec;text-align:center">~$8,800</td></tr>
+<tr><th colspan="3" style="background:#b9770e;color:#ffffff;font-size:16px;font-weight:800;padding:11px 12px;border:1px solid #ffffff;text-align:left">📆 MONEY WE SPEND EVERY MONTH</th></tr>
+<tr><th style="background:#fef5e7;color:#b9770e;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec;text-align:left">WHAT FOR</th><th style="background:#fef5e7;color:#b9770e;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec;text-align:center">SLOW &amp; SAFE START</th><th style="background:#fef5e7;color:#b9770e;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec;text-align:center">FAST START</th></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec">Software (booking page, Zoom, email, phone, website hosting)</td><td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center">$120</td><td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center">$300</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec">Helpers (VA staff)</td><td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center">$900 (1 person)</td><td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center">$2,800 (2 people)</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec">Ads on Google and Facebook</td><td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center">$1,800 ($60 a day)</td><td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center">$4,800 ($160 a day)</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec">Legal help + video editing</td><td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center">$50</td><td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center">$900</td></tr>
+<tr><td style="background:#fef5e7;color:#b9770e;font-weight:800;font-size:16px;padding:11px 12px;border:1px solid #dfe3ec">TOTAL EVERY MONTH</td><td style="background:#fef5e7;color:#b9770e;font-weight:800;font-size:16px;padding:11px 12px;border:1px solid #dfe3ec;text-align:center">about $2,900</td><td style="background:#fef5e7;color:#b9770e;font-weight:800;font-size:16px;padding:11px 12px;border:1px solid #dfe3ec;text-align:center">about $8,800</td></tr>
 
-<tr><th colspan="3" style="background:#1a5490;color:#ffffff;font-size:16px;font-weight:800;padding:11px 12px;border:1px solid #ffffff;text-align:left">📈 REVENUE PROJECTION (target, not a promise)</th></tr>
-<tr><th style="background:#eaf2fb;color:#1a5490;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec;text-align:left">STAGE</th><th style="background:#eaf2fb;color:#1a5490;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec;text-align:left">WHAT'S HAPPENING</th><th style="background:#eaf2fb;color:#1a5490;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec;text-align:center">REVENUE / MONTH</th></tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Months 1–2</td><td style="padding:9px 12px;border:1px solid #dfe3ec">His existing clients + referrals only. No ads.</td><td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center;font-weight:700">$1,500–4,000</td></tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Month 3</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Ads on. Content building. The 90-day gate.</td><td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center;font-weight:700">$6,000–10,000</td></tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Months 4–6</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Subscriptions live. Content compounding.</td><td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center;font-weight:700">$12,000–20,000</td></tr>
-<tr><td style="background:#eafaf1;padding:9px 12px;border:1px solid #dfe3ec;font-weight:700;color:#1e7e34">Months 6–9</td><td style="background:#eafaf1;padding:9px 12px;border:1px solid #dfe3ec;color:#1e7e34;font-weight:600">Near his solo ceiling. LTD adds ~$150K one-time.</td><td style="background:#eafaf1;padding:9px 12px;border:1px solid #dfe3ec;text-align:center;font-weight:800;color:#1e7e34;font-size:16px">$25,000–35,000</td></tr>
-<tr><td style="background:#f4ecf7;padding:9px 12px;border:1px solid #dfe3ec;font-weight:700;color:#6c3483">Month 12+</td><td style="background:#f4ecf7;padding:9px 12px;border:1px solid #dfe3ec;color:#6c3483;font-weight:600">Gemstones + 2nd astrologer. THE CEILING BREAKS HERE.</td><td style="background:#f4ecf7;padding:9px 12px;border:1px solid #dfe3ec;text-align:center;font-weight:800;color:#6c3483;font-size:16px">$40,000+</td></tr>
-<tr><td colspan="3" style="background:#fff3cd;color:#7d6608;font-weight:700;padding:10px 12px;border:1px solid #dfe3ec">💡 REALITY CHECK: a good month 9 is ~$30K revenue on ~$11K costs = ~$19K profit = ~$9.5K each. Real, but not life-changing yet. The reason to do this is month 12+: gemstones and more astrologers. That's why the agreement MUST allow adding astrologers from day one.</td></tr>
+<tr><th colspan="3" style="background:#1a5490;color:#ffffff;font-size:16px;font-weight:800;padding:11px 12px;border:1px solid #ffffff;text-align:left">📈 WHAT WE HOPE TO EARN (this is a target, not a promise)</th></tr>
+<tr><th style="background:#eaf2fb;color:#1a5490;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec;text-align:left">WHEN</th><th style="background:#eaf2fb;color:#1a5490;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec;text-align:left">WHAT IS GOING ON</th><th style="background:#eaf2fb;color:#1a5490;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec;text-align:center">MONEY IN, PER MONTH</th></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Month 1 and 2</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Only his old clients and their friends. No ads yet.</td><td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center;font-weight:700">$1,500–4,000</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Month 3</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Ads switched on. Videos going out. We check if it is working.</td><td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center;font-weight:700">$6,000–10,000</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Month 4 to 6</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Monthly plans start. Videos bring more people in each week.</td><td style="padding:9px 12px;border:1px solid #dfe3ec;text-align:center;font-weight:700">$12,000–20,000</td></tr>
+<tr><td style="background:#eafaf1;padding:9px 12px;border:1px solid #dfe3ec;font-weight:700;color:#1e7e34">Month 6 to 9</td><td style="background:#eafaf1;padding:9px 12px;border:1px solid #dfe3ec;color:#1e7e34;font-weight:600">His calendar is nearly full. The 150 founder spots add about $150,000 in one go.</td><td style="background:#eafaf1;padding:9px 12px;border:1px solid #dfe3ec;text-align:center;font-weight:800;color:#1e7e34;font-size:16px">$25,000–35,000</td></tr>
+<tr><td style="background:#f4ecf7;padding:9px 12px;border:1px solid #dfe3ec;font-weight:700;color:#6c3483">Month 12 and after</td><td style="background:#f4ecf7;padding:9px 12px;border:1px solid #dfe3ec;color:#6c3483;font-weight:600">Gemstones start selling. We add a 2nd astrologer. THIS is where it really grows.</td><td style="background:#f4ecf7;padding:9px 12px;border:1px solid #dfe3ec;text-align:center;font-weight:800;color:#6c3483;font-size:16px">$40,000+</td></tr>
+<tr><td colspan="3" style="background:#fff3cd;color:#7d6608;font-weight:700;padding:10px 12px;border:1px solid #dfe3ec">💡 BE HONEST ABOUT THIS: In a good month 9, we might make $30,000 and spend $11,000. That leaves about $19,000 profit — around $9,500 each. That is good money, but it is not huge yet. The business only gets big AFTER month 12, when we sell gemstones and add more astrologers. That is why the partnership paper MUST say we are allowed to add more astrologers later.</td></tr>
 </table>
 </div></div>
 
 <!-- ================= 5. COPY RULES ================= -->
 <div class="blk">
-<div class="bar"><h2>5 · The Ad &amp; Copy Rules<span class="sub">Break these and the accounts get banned. Pulled from live, running astrology ads.</span></h2><button class="copy" data-t="t5">📋 Copy table</button></div>
+<div class="bar"><h2>5 · Words We Use, Words We Never Use<span class="sub">Facebook and Google will ban us if we get this wrong. This is the most important table.</span></h2><button class="copy" data-t="t5">📋 Copy table</button></div>
 <div class="scroll">
 <table id="t5">
 <tr>
-<th style="background:#1e7e34;color:#ffffff;font-size:16px;font-weight:800;padding:11px 12px;border:1px solid #ffffff;text-align:left;width:50%">✅ ALWAYS DO THIS</th>
-<th style="background:#c0392b;color:#ffffff;font-size:16px;font-weight:800;padding:11px 12px;border:1px solid #ffffff;text-align:left;width:50%">⛔ NEVER DO THIS</th>
+<th style="background:#1e7e34;color:#ffffff;font-size:16px;font-weight:800;padding:11px 12px;border:1px solid #ffffff;text-align:left;width:50%">✅ SAY THIS</th>
+<th style="background:#c0392b;color:#ffffff;font-size:16px;font-weight:800;padding:11px 12px;border:1px solid #ffffff;text-align:left;width:50%">⛔ NEVER SAY THIS</th>
 </tr>
 <tr>
-<td style="background:#eafaf1;padding:9px 12px;border:1px solid #dfe3ec">Describe the SYSTEM in third person: "In astrology, your rising sign is the mask you wear."</td>
-<td style="background:#fdecea;padding:9px 12px;border:1px solid #dfe3ec">Name their sign AT them: "As a Scorpio, you've been betrayed." ← instant ban</td>
+<td style="background:#eafaf1;padding:9px 12px;border:1px solid #dfe3ec">Talk about astrology in general: "In astrology, your rising sign shows how people first see you."</td>
+<td style="background:#fdecea;padding:9px 12px;border:1px solid #dfe3ec">Never tell the reader their own star sign: "As a Scorpio, you have been betrayed." ← Facebook bans this fast.</td>
 </tr>
 <tr>
-<td style="background:#eafaf1;padding:9px 12px;border:1px solid #dfe3ec">Ask about a SITUATION: "Navigating a career decision?"</td>
-<td style="background:#fdecea;padding:9px 12px;border:1px solid #dfe3ec">Imply you know their state: "Feeling anxious?" "Struggling with money?"</td>
+<td style="background:#eafaf1;padding:9px 12px;border:1px solid #dfe3ec">Ask about a life event: "Thinking about changing jobs?"</td>
+<td style="background:#fdecea;padding:9px 12px;border:1px solid #dfe3ec">Never say you know how they feel or what money problems they have: "Feeling worried?" "Short of money?"</td>
 </tr>
 <tr>
-<td style="background:#eafaf1;padding:9px 12px;border:1px solid #dfe3ec">Let the QUIZ personalise it — they hand over birth details AFTER the click</td>
-<td style="background:#fdecea;padding:9px 12px;border:1px solid #dfe3ec">Guarantee outcomes: "bring your ex back", "100% accurate", "manifest $10k"</td>
+<td style="background:#eafaf1;padding:9px 12px;border:1px solid #dfe3ec">Let them type in their birth details AFTER they click. Then the reading becomes personal.</td>
+<td style="background:#fdecea;padding:9px 12px;border:1px solid #dfe3ec">Never promise a result: "Get your ex back", "100% correct", "You will get rich".</td>
 </tr>
 <tr>
-<td style="background:#eafaf1;padding:9px 12px;border:1px solid #dfe3ec">Hedge softly: clarity, guidance, insight, direction</td>
-<td style="background:#fdecea;padding:9px 12px;border:1px solid #dfe3ec">Any healing/medical framing: "heal your trauma", "cure your anxiety"</td>
+<td style="background:#eafaf1;padding:9px 12px;border:1px solid #dfe3ec">Use gentle words: clarity, guidance, understanding, direction.</td>
+<td style="background:#fdecea;padding:9px 12px;border:1px solid #dfe3ec">Never talk about curing or healing: "heal your pain", "cure your worry". This is treated as a medical claim and it is illegal.</td>
 </tr>
 <tr>
-<td style="background:#eafaf1;padding:9px 12px;border:1px solid #dfe3ec">Show real credentials, real review counts, real prices</td>
-<td style="background:#fdecea;padding:9px 12px;border:1px solid #dfe3ec">Lottery/gambling luck claims — banned outright across ALL of UK + EU</td>
+<td style="background:#eafaf1;padding:9px 12px;border:1px solid #dfe3ec">Show his real training papers, real reviews and real prices.</td>
+<td style="background:#fdecea;padding:9px 12px;border:1px solid #dfe3ec">Never say a reading or a stone helps someone win money or the lottery. This is banned in the whole of the UK and Europe.</td>
 </tr>
 <tr>
-<td style="background:#eafaf1;padding:9px 12px;border:1px solid #dfe3ec">Sell the service, the duration, the price, the credential</td>
-<td style="background:#fdecea;padding:9px 12px;border:1px solid #dfe3ec">Fake urgency, fake scarcity, fake reviews — UK fines up to 10% of global turnover</td>
+<td style="background:#eafaf1;padding:9px 12px;border:1px solid #dfe3ec">Say what they get: how long the call is, what it costs, who he is.</td>
+<td style="background:#fdecea;padding:9px 12px;border:1px solid #dfe3ec">Never use fake countdown timers, fake "only 2 left", or fake reviews. In the UK the fine can be 10% of everything the company earns worldwide.</td>
 </tr>
 </table>
 </div></div>
 
 <!-- ================= 6. VENDORS ================= -->
 <div class="blk">
-<div class="bar"><h2>6 · Vendors — Who Will Take Us, Who Won't<span class="sub">Every one of these was checked against their actual written policy</span></h2><button class="copy" data-t="t6">📋 Copy table</button></div>
+<div class="bar"><h2>6 · Companies That Will Work With Us — And Ones That Will Not<span class="sub">I read each company's own written rules to check this</span></h2><button class="copy" data-t="t6">📋 Copy table</button></div>
 <div class="scroll">
 <table id="t6">
 <tr>
-<th style="background:#16181d;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">VENDOR</th>
-<th style="background:#16181d;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">VERDICT</th>
+<th style="background:#16181d;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">COMPANY</th>
+<th style="background:#16181d;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">USE THEM?</th>
 <th style="background:#16181d;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">WHY</th>
 </tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">Stripe</td><td style="background:#eafaf1;color:#1e7e34;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">✅ USE — primary</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Astrology only banned on their Japan/Mexico/Thailand lists — not US, UK, EU or Canada</td></tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">High-risk backup (CorePay / PayKings)</td><td style="background:#eafaf1;color:#1e7e34;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">✅ USE — parachute</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Sign up BEFORE we need it. A frozen processor mid-launch is the #1 catastrophe risk.</td></tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">PayPal</td><td style="background:#eafaf1;color:#1e7e34;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">✅ USE — 2nd option</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Nothing in their policy bans astrology. Expect a rolling reserve. Live video readings need pre-approval.</td></tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">Paddle · FastSpring · Gumroad · Lemon Squeezy</td><td style="background:#fdecea;color:#c0392b;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">❌ DON'T BOTHER</td><td style="padding:9px 12px;border:1px solid #dfe3ec">All four EXPLICITLY ban astrology/"pseudo-science, horoscopes, fortune-telling" in writing</td></tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">Cal.com (booking)</td><td style="background:#fdecea;color:#c0392b;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">❌ AVOID</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Went closed-source Apr 2026, abandoned, unfixed "customer paid but booking shows pending" bugs</td></tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">Calendly / Acuity (booking)</td><td style="background:#eafaf1;color:#1e7e34;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">✅ USE</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Boring, paid, they work. Pay-at-booking via Stripe, auto timezone.</td></tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">Brex (banking)</td><td style="background:#fdecea;color:#c0392b;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">❌ WON'T TAKE US</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Requires US physical presence + funded startup or $1M+ revenue</td></tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">Airwallex / Mercury (banking)</td><td style="background:#eafaf1;color:#1e7e34;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">✅ USE</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Works for a US LLC. NOTE: declare gemstones before Phase 5 — they're a restricted category.</td></tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">Google · Meta · Microsoft · TikTok ads</td><td style="background:#eafaf1;color:#1e7e34;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">✅ ALL ALLOW IT</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Astrology is allowed on all four in US/UK/CA. Get Meta business verification done EARLY + add a 2nd admin.</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">Stripe (takes card payments)</td><td style="background:#eafaf1;color:#1e7e34;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">✅ YES — main one</td><td style="padding:9px 12px;border:1px solid #dfe3ec">They only ban astrology in Japan, Mexico and Thailand. They allow it in America, UK, Canada and Europe.</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">A backup card company (CorePay or PayKings)</td><td style="background:#eafaf1;color:#1e7e34;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">✅ YES — spare tyre</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Set this up BEFORE we need it. If Stripe ever freezes our money, the business stops that same day. This is our backup.</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">PayPal</td><td style="background:#eafaf1;color:#1e7e34;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">✅ YES — second choice at checkout</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Their rules do not ban astrology. But they will hold some of our money for a while, and we must ask their permission for live video readings.</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">Paddle, FastSpring, Gumroad, Lemon Squeezy</td><td style="background:#fdecea;color:#c0392b;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">❌ NO — do not even apply</td><td style="padding:9px 12px;border:1px solid #dfe3ec">All four say in writing that they ban astrology and fortune telling. Applying would waste a week.</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">Cal.com (booking page)</td><td style="background:#fdecea;color:#c0392b;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">❌ NO — avoid</td><td style="padding:9px 12px;border:1px solid #dfe3ec">It is broken. Clients pay, but the booking still shows as unpaid. The company stopped fixing it in April 2026.</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">Calendly or Acuity (booking page)</td><td style="background:#eafaf1;color:#1e7e34;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">✅ YES</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Boring, we pay for it, and it works. Client picks a time, pays straight away, and the time zone is handled for them.</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">Brex (bank)</td><td style="background:#fdecea;color:#c0392b;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">❌ NO — they will refuse us</td><td style="padding:9px 12px;border:1px solid #dfe3ec">They only take companies with an office in America, or big investors, or $1 million a year already.</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">Airwallex or Mercury (bank)</td><td style="background:#eafaf1;color:#1e7e34;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">✅ YES</td><td style="padding:9px 12px;border:1px solid #dfe3ec">They accept a US company owned by people living abroad. IMPORTANT: we must tell them we sell gemstones BEFORE we start selling them.</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">Google, Facebook, Instagram, Microsoft, TikTok ads</td><td style="background:#eafaf1;color:#1e7e34;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">✅ ALL OF THEM ALLOW IT</td><td style="padding:9px 12px;border:1px solid #dfe3ec">All five allow astrology ads in America, UK and Canada. Two safety rules: prove who we are with Facebook early, and always have a second person as admin on the account, in case one gets locked out.</td></tr>
 </table>
 </div></div>
 
 <!-- ================= 7. ACTIONS ================= -->
 <div class="blk">
-<div class="bar"><h2>7 · Week 1 — Who Does What<span class="sub">Paste this in and tick it off</span></h2><button class="copy" data-t="t7">📋 Copy table</button></div>
+<div class="bar"><h2>7 · What To Do First<span class="sub">Paste this in and tick each box when it is finished</span></h2><button class="copy" data-t="t7">📋 Copy table</button></div>
 <div class="scroll">
 <table id="t7">
 <tr>
 <th style="background:#c0392b;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">#</th>
-<th style="background:#c0392b;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">ACTION</th>
-<th style="background:#c0392b;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">OWNER</th>
+<th style="background:#c0392b;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">WHAT NEEDS DOING</th>
+<th style="background:#c0392b;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">WHO</th>
 <th style="background:#c0392b;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">DONE?</th>
 </tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">1</td><td style="background:#fff3cd;color:#7d6608;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">Sign the partnership agreement — MUST include the right to add other astrologers later</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Dominic + Partner</td><td style="padding:9px 12px;border:1px solid #dfe3ec">☐</td></tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">2</td><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Pick a brand name → I buy the domain same day</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Dominic + Partner</td><td style="padding:9px 12px;border:1px solid #dfe3ec">☐</td></tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">3</td><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Confirm his honest weekly session capacity (sets subscription caps + LTD maths)</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Partner</td><td style="padding:9px 12px;border:1px solid #dfe3ec">☐</td></tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">4</td><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Send me his certification documents (we must hold proof BEFORE any ad runs — UK law)</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Partner</td><td style="padding:9px 12px;border:1px solid #dfe3ec">☐</td></tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">5</td><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Export his existing client list (the first 20 sales come from here, free)</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Partner</td><td style="padding:9px 12px;border:1px solid #dfe3ec">☐</td></tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">6</td><td style="background:#eafaf1;color:#1e7e34;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">File the US LLC + EIN (EIN takes 4–8 weeks — this goes first)</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Me</td><td style="padding:9px 12px;border:1px solid #dfe3ec">☐</td></tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">7</td><td style="background:#eafaf1;color:#1e7e34;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">Stripe + backup processor + bank</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Me</td><td style="padding:9px 12px;border:1px solid #dfe3ec">☐</td></tr>
-<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">8</td><td style="background:#eafaf1;color:#1e7e34;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">Website, booking, legal pages, consent flows</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Me</td><td style="padding:9px 12px;border:1px solid #dfe3ec">☐</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">1</td><td style="background:#fff3cd;color:#7d6608;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">Sign the partnership paper. It MUST say we can add more astrologers later. Without that line, the business can never grow past one man.</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Dominic + partner</td><td style="padding:9px 12px;border:1px solid #dfe3ec">☐</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">2</td><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Choose a business name. Tell me, and I buy the website address the same day.</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Dominic + partner</td><td style="padding:9px 12px;border:1px solid #dfe3ec">☐</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">3</td><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">He tells us honestly how many readings he can do in a week without getting tired. All our plans depend on this number.</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Partner</td><td style="padding:9px 12px;border:1px solid #dfe3ec">☐</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">4</td><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">He sends me photos of his astrology training papers. UK law says we must have proof BEFORE we put any claim in an ad.</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Partner</td><td style="padding:9px 12px;border:1px solid #dfe3ec">☐</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">5</td><td style="background:#eafaf1;color:#1e7e34;font-weight:700;padding:9px 12px;border:1px solid #dfe3ec">He sends a list of everyone he has read for before. Our first 20 sales come from these people, and they cost us nothing.</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Partner</td><td style="padding:9px 12px;border:1px solid #dfe3ec">☐</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">6</td><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Open the US company and apply for the tax number. The tax number takes 4 to 8 weeks, so this goes first.</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Me</td><td style="padding:9px 12px;border:1px solid #dfe3ec">☐</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">7</td><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Set up Stripe, the backup card company, and the bank.</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Me</td><td style="padding:9px 12px;border:1px solid #dfe3ec">☐</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">8</td><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:600">Build the website, the booking page, and the rules pages.</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Me</td><td style="padding:9px 12px;border:1px solid #dfe3ec">☐</td></tr>
+</table>
+</div></div>
+
+<!-- ================= WORD LIST FOR THE VA ================= -->
+<div class="blk">
+<div class="bar"><h2>8 · Word List — for the helper (VA)<span class="sub">If a word on this page is confusing, it is explained here</span></h2><button class="copy" data-t="t8">📋 Copy table</button></div>
+<div class="scroll">
+<table id="t8">
+<tr>
+<th style="background:#4f2d7f;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">WORD</th>
+<th style="background:#4f2d7f;color:#ffffff;font-size:15px;font-weight:700;padding:10px 12px;border:1px solid #ffffff;text-align:left">WHAT IT MEANS IN SIMPLE WORDS</th>
+</tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">Birth chart</td><td style="padding:9px 12px;border:1px solid #dfe3ec">A map of where the planets were on the day someone was born. We need their birth DATE, exact TIME, and CITY. Without all three, he cannot do the reading. Always ask for all three.</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">Chargeback</td><td style="padding:9px 12px;border:1px solid #dfe3ec">When a client tells their bank "I did not agree to this payment" and the bank takes the money back from us. Too many of these and Stripe closes our account. This is why we always send clear receipts.</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">Refund</td><td style="padding:9px 12px;border:1px solid #dfe3ec">When WE give the money back on purpose because the client asked us. Always better than a chargeback. If a client is upset, refund them quickly and politely.</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">Consent</td><td style="padding:9px 12px;border:1px solid #dfe3ec">The client saying "yes, I agree". Before we record any call, the client must tick a box AND say "yes" out loud on the recording. If they say no, we stop recording and carry on with the call.</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">Time zone</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Clients are in America, UK and Canada, so their clock is different from ours. Never write "3pm" alone. The booking system handles this for us — always let it, never book by hand.</td></tr>
+<tr><td style="padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">Follow-up</td><td style="padding:9px 12px;border:1px solid #dfe3ec">Messaging an old client again to see if they want another reading. Most of our money comes from people coming back, not new people.</td></tr>
+<tr><td style="background:#fdecea;color:#c0392b;padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">THE HELPER'S GOLDEN RULE</td><td style="background:#fdecea;color:#c0392b;padding:9px 12px;border:1px solid #dfe3ec;font-weight:700">A helper NEVER gives a reading and NEVER answers questions about what a chart means. If a client asks anything about astrology, the answer is always: "Let me book that with our astrologer." Helpers only handle bookings, payments, times, and sending files.</td></tr>
 </table>
 </div></div>
 
 <div class="how" style="background:#eafaf1;border-color:#1e7e34">
-<b style="color:#1e7e34">The 3 things your partner most needs to understand:</b><br><br>
-<b>1.</b> This is <b>100% legal</b> in the US, UK and Canada. No licence needed. Google, Meta, Microsoft and TikTok all allow astrology ads. The rules are about <i>how we word things</i>, not whether we're allowed to exist.<br><br>
-<b>2.</b> <b>He is the business.</b> The money in this industry is made by live human consultation — it out-earns astrology apps roughly tenfold. His face, his voice and his reputation ARE the product. Which also means he's the bottleneck: one person maxes out around $26K/month, so we build recorded readings and subscriptions around him.<br><br>
-<b>3.</b> <b>We will never promise outcomes.</b> No "your ex will return", no guaranteed money, no curing anxiety. Every company destroyed in this industry died on exactly that — including one the FTC sued last month. We sell his expertise and his time, never the result. This is not us being timid; it's the entire difference between a business and a lawsuit.
+<b style="color:#1e7e34">The 3 things the partner really needs to understand:</b><br><br>
+<b>1. This is completely legal.</b> In America, the UK and Canada we do not need any licence or permit. Google, Facebook, Instagram, Microsoft and TikTok all allow astrology ads. The rules are only about <i>how we word things</i> — not about whether we are allowed to do this at all.<br><br>
+<b>2. He IS the business.</b> In this industry, real people doing real readings make about ten times more money than astrology apps do. His face, his voice and his good name are the product. But that also means he is the limit: one person can only earn around $26,000 a month before he runs out of hours. So we build recorded readings and monthly plans around him, so the business can earn while he sleeps.<br><br>
+<b>3. We never promise results.</b> We never say "your ex will come back", never promise money, never say we can cure worry or illness. Every company that got destroyed in this business died doing exactly that — including one the US government sued last month. We sell his skill and his time. We never sell the outcome. This is not us being scared. It is the whole difference between a real business and a court case.
 </div>
 
 </div>
 
-<footer><div class="wrap">Astro-Global · <a href="launch.html">Full launch plan</a> · <a href="index.html">Research pack</a></div></footer>
+<footer><div class="wrap">Astro-Global · <a href="launch.html">The full plan</a> · <a href="index.html">The research</a></div></footer>
 
 <script>
 document.querySelectorAll('.copy').forEach(function(btn){
@@ -334,7 +358,7 @@ document.querySelectorAll('.copy').forEach(function(btn){
     }).join('\n');
     var done = function(){
       var old = btn.textContent;
-      btn.textContent = '✅ Copied — paste into Sheets';
+      btn.textContent = '✅ Copied — now paste into Sheets';
       btn.classList.add('ok');
       setTimeout(function(){ btn.textContent = old; btn.classList.remove('ok'); }, 2600);
     };
