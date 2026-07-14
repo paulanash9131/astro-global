@@ -3,7 +3,7 @@
 <meta name="robots" content="noindex,nofollow">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#0e1633">
 <title>The Roadmap — Astro-Global</title>
-<meta name="description" content="Visual roadmap: what we build, in what order, with what resources.">
+<meta name="description" content="Visual roadmap: what the business builds, in what order, with what resources.">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
 :root{
@@ -23,7 +23,6 @@ body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);l
 .wrap{max-width:1140px;margin:0 auto;padding:0 22px}
 a{color:var(--violet)}
 
-/* hero */
 .hero{position:relative;overflow:hidden;background:
    radial-gradient(1000px 420px at 12% 0%, rgba(108,76,241,.28), transparent 60%),
    radial-gradient(800px 400px at 92% 15%, rgba(13,148,136,.25), transparent 60%),
@@ -35,18 +34,20 @@ a{color:var(--violet)}
 .tag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;
   padding:7px 15px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25)}
 h1{font-family:var(--disp);font-size:clamp(32px,5vw,52px);line-height:1.08;margin:20px 0 12px;font-weight:800;letter-spacing:-.025em}
-.hero p{font-size:18px;max-width:660px;margin:0;color:#c9cfeb}
-.legend{display:flex;gap:20px;flex-wrap:wrap;margin-top:30px}
+.hero p{font-size:18px;max-width:680px;margin:0;color:#c9cfeb}
+.dl{display:inline-flex;align-items:center;gap:10px;margin-top:28px;background:#fff;color:#1b2140;font-weight:700;
+  padding:13px 22px;border-radius:12px;text-decoration:none;font-size:15px;box-shadow:0 12px 30px -12px rgba(0,0,0,.5)}
+.dl:hover{transform:translateY(-1px)}
+.legend{display:flex;gap:20px;flex-wrap:wrap;margin-top:26px}
 .legend div{font-size:13px;color:#aeb6da;display:flex;align-items:center;gap:8px}
 .legend i{width:11px;height:11px;border-radius:50%;display:inline-block}
 
-/* sections */
 section{padding:60px 0}
 .eyebrow{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--violet)}
 h2{font-family:var(--disp);font-size:clamp(25px,3.4vw,34px);margin:8px 0 10px;letter-spacing:-.02em;font-weight:800}
-.lede{color:var(--ink2);max-width:720px;margin:0 0 34px;font-size:17px}
+.lede{color:var(--ink2);max-width:760px;margin:0 0 34px;font-size:17px}
 
-/* ---------- THE PATH ---------- */
+/* THE PATH */
 .path{position:relative;padding:10px 0}
 .spine{position:absolute;left:50%;top:0;bottom:0;width:3px;transform:translateX(-50%);
   background-image:linear-gradient(var(--line) 60%,transparent 0);background-size:3px 14px;z-index:0}
@@ -58,7 +59,6 @@ h2{font-family:var(--disp);font-size:clamp(25px,3.4vw,34px);margin:8px 0 10px;le
   box-shadow:0 2px 4px rgba(14,22,51,.03),0 12px 30px -18px rgba(14,22,51,.25);position:relative}
 .stop.l .card{grid-column:1;margin-right:14px}
 .stop.r .card{grid-column:3;margin-left:14px}
-/* dotted connector from card to node */
 .card:after{content:"";position:absolute;top:50%;width:26px;height:2px;
   background-image:linear-gradient(90deg,var(--line) 55%,transparent 0);background-size:7px 2px}
 .stop.l .card:after{right:-27px}
@@ -79,36 +79,16 @@ h2{font-family:var(--disp);font-size:clamp(25px,3.4vw,34px);margin:8px 0 10px;le
 .r .node{background:linear-gradient(140deg,#fb7185,#e0447a)} .r ul li:before{background:var(--rose)} .r .pill{background:var(--rose-l);color:var(--rose)}
 .gr .node{background:linear-gradient(140deg,#4ade80,#16a34a)} .gr ul li:before{background:var(--green)} .gr .pill{background:var(--green-l);color:var(--green)}
 
-/* checkpoint banner */
 .gate{grid-column:1 / -1;justify-self:center;background:var(--ink);color:#fff;border-radius:16px;padding:20px 26px;
-  max-width:640px;margin:8px 0 30px;text-align:center;box-shadow:0 14px 34px -16px rgba(14,22,51,.6)}
+  max-width:660px;margin:8px 0 30px;text-align:center;box-shadow:0 14px 34px -16px rgba(14,22,51,.6)}
 .gate h4{font-family:var(--disp);margin:0 0 8px;font-size:18px;color:#fff}
 .gate p{margin:0;color:#b9c0e0;font-size:14.5px}
 .gate b{color:#ffd166}
 
-/* ---------- SITEMAP TREE ---------- */
-.tree{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:30px 26px;overflow-x:auto}
-.tier{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
-.box{background:#fff;border:2px solid var(--line);border-radius:12px;padding:11px 15px;font-size:14px;font-weight:600;text-align:center;min-width:120px}
-.box small{display:block;font-weight:500;font-size:11.5px;color:var(--ink3);margin-top:2px}
-.root{background:var(--ink);color:#fff;border-color:var(--ink);font-family:var(--disp);font-weight:700;font-size:16px;padding:14px 26px}
-.geo{border-width:2px}
-.geo.us{border-color:var(--blue);background:var(--blue-l)}
-.geo.uk{border-color:var(--rose);background:var(--rose-l)}
-.geo.ca{border-color:var(--teal);background:var(--teal-l)}
-.drop{height:26px;width:2px;margin:0 auto;background-image:linear-gradient(var(--ink3) 55%,transparent 0);background-size:2px 6px;opacity:.55}
-.bracket{height:26px;position:relative;margin:0 auto;max-width:760px}
-.bracket:before{content:"";position:absolute;left:16.6%;right:16.6%;top:0;height:2px;
-  background-image:linear-gradient(90deg,var(--ink3) 55%,transparent 0);background-size:6px 2px;opacity:.55}
-.bracket span{position:absolute;top:0;width:2px;height:26px;background-image:linear-gradient(var(--ink3) 55%,transparent 0);background-size:2px 6px;opacity:.55}
-.bracket span:nth-child(1){left:16.6%} .bracket span:nth-child(2){left:50%} .bracket span:nth-child(3){left:83.3%}
-.shared{margin-top:26px;padding-top:24px;border-top:2px dotted var(--line)}
-.shared h4{font-family:var(--disp);text-align:center;margin:0 0 14px;font-size:15px;color:var(--ink2)}
-
-/* ---------- RESOURCE CARDS ---------- */
+/* generic panels */
+.panel{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px 26px;margin-top:8px}
 .grid{display:grid;gap:16px}
-.g3{grid-template-columns:repeat(3,1fr)}
-.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)} .g2{grid-template-columns:repeat(2,1fr)}
 @media(max-width:880px){.g3,.g2{grid-template-columns:1fr}}
 .res{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;border-top:4px solid var(--violet)}
 .res.t2{border-top-color:var(--teal)} .res.g2c{border-top-color:var(--gold)} .res.b2{border-top-color:var(--blue)} .res.r2{border-top-color:var(--rose)} .res.gr2{border-top-color:var(--green)}
@@ -118,6 +98,27 @@ h2{font-family:var(--disp);font-size:clamp(25px,3.4vw,34px);margin:8px 0 10px;le
 .res ul li{padding:5px 0 5px 18px;position:relative;font-size:14.5px;color:var(--ink2);border-bottom:1px dotted var(--line)}
 .res ul li:last-child{border-bottom:0}
 .res ul li:before{content:"›";position:absolute;left:2px;top:4px;color:var(--ink3);font-weight:700}
+
+/* tables */
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:#fff}
+table{border-collapse:collapse;width:100%;font-size:14.5px;min-width:560px}
+th,td{padding:12px 15px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:var(--ink);color:#fff;font-family:var(--disp);font-weight:700;font-size:12.5px}
+tbody tr:last-child td{border-bottom:0}
+tr.mid td{background:var(--gold-l)}
+td b{color:var(--ink)}
+.price{font-family:var(--disp);font-weight:800;font-size:17px;color:var(--ink);white-space:nowrap}
+
+.note{border-radius:14px;padding:16px 20px;font-size:15px;margin:16px 0}
+.note.gold{background:var(--gold-l);border:1px solid #f0d98a;color:#7a5a08}
+.note.rose{background:var(--rose-l);border:1px solid #f7c2d6;color:#8e1a48}
+.note.green{background:var(--green-l);border:1px solid #b6e6c6;color:#146c37}
+.note.violet{background:var(--violet-l);border:1px solid #d6cbff;color:#4a2fb8}
+.note b{font-weight:700}
+
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.chip{font-size:13px;font-weight:600;padding:6px 13px;border-radius:9px;background:#fff;border:1px solid var(--line)}
+.chip.yes{border-color:#b6e6c6;color:#146c37;background:var(--green-l)} .chip.no{border-color:#f7c2d6;color:#8e1a48;background:var(--rose-l)}
 
 footer{padding:44px 0 70px;text-align:center;color:var(--ink3);font-size:14px}
 
@@ -135,328 +136,369 @@ footer{padding:44px 0 70px;text-align:center;color:var(--ink3);font-size:14px}
 
 <header class="hero"><div class="stars"></div><div class="wrap">
 <span class="tag">✦ The Build Roadmap</span>
-<h1>What we build,<br>and in what order.</h1>
-<p>The company paperwork is settled. This is everything that comes after it — the website across three countries, the people, the tools, the money, and the checkpoints where we stop and prove it's working before we spend more.</p>
+<h1>What the business builds,<br>and in what order.</h1>
+<p>The company setup is settled. This is everything after it — the website across three countries, the offer, the content, the signature gemstone line, the money, and the checkpoints where we stop and prove it works before spending more. The value here is the <b>knowledge and the study</b>, not any one person.</p>
+<a class="dl" href="assets/astro-global-playbook.pdf" download>⬇︎ Download the Operating Playbook (PDF)</a>
 <div class="legend">
 <div><i style="background:#6c4cf1"></i> Build</div>
 <div><i style="background:#0d9488"></i> Content &amp; audience</div>
 <div><i style="background:#d99a0b"></i> Paid ads</div>
 <div><i style="background:#2563eb"></i> Recurring income</div>
-<div><i style="background:#e0447a"></i> Products</div>
+<div><i style="background:#e0447a"></i> Signature product</div>
 <div><i style="background:#16a34a"></i> Scale</div>
 </div>
 </div></header>
 
-<!-- ================= THE PATH ================= -->
+<!-- ============ THE PATH ============ -->
 <section><div class="wrap">
 <span class="eyebrow">The journey</span>
-<h2>Seven stops, in order</h2>
-<p class="lede">Each stop only starts when the one before it is genuinely done. The two black checkpoints are hard stops — if we fail them, we fix the problem instead of spending more money.</p>
+<h2>Eight stops, in order</h2>
+<p class="lede">Each stop only begins when the one before it is genuinely done. The two black bars are hard checkpoints — fail them and we fix the business rather than spend more money.</p>
 
 <div class="path">
 <div class="spine"></div>
 
-<!-- 1 -->
-<div class="stop l v">
-<div class="card">
-<h3>🌐 The website</h3>
-<span class="when">Weeks 1–4 · everything depends on this</span>
-<p>One brand, three countries. Not three websites — one site that knows where the visitor is and shows them the right currency, the right times and the right astrologer.</p>
+<div class="stop l v"><div class="card">
+<h3>🌐 The website</h3><span class="when">Weeks 1–4 · everything rests on this</span>
+<p>One brand, three countries. Not three sites — one that detects the visitor's country and shows the right currency, times and local trust cues.</p>
 <ul>
-<li>Home, services, prices, about him, booking, blog</li>
-<li>The <b>free birth-chart tool</b> — our single best lead magnet</li>
-<li>Rules pages (privacy, refunds, terms, contact)</li>
-<li>Consent tick-boxes built into the booking flow</li>
+<li>Home · services &amp; prices · about the practice · booking · blog</li>
+<li>A <b>free "big questions" entry</b> — love, money, career, the year ahead (a birth chart is just one option under it)</li>
+<li>Rules pages: privacy, refunds, terms, contact</li>
+<li>Consent tick-boxes built into booking</li>
 </ul>
-<span class="pill">Full structure below ↓</span>
-</div>
-<div class="node">1<small>Foundation</small></div>
-</div>
+<span class="pill">Structure &amp; the 3-country detail below ↓</span>
+</div><div class="node">1<small>Foundation</small></div></div>
 
-<!-- 2 -->
-<div class="stop r v">
-<div class="node">2<small>Machinery</small></div>
-<div class="card">
-<h3>⚙️ Booking, payments, inbox</h3>
-<span class="when">Weeks 3–6 · runs alongside the website</span>
-<p>The plumbing. Nothing glamorous, but if a client in Toronto can't book a 7pm slot and pay in Canadian dollars, nothing else matters.</p>
+<div class="stop r v"><div class="node">2<small>Machinery</small></div><div class="card">
+<h3>⚙️ Booking, payments, inbox</h3><span class="when">Weeks 3–6 · runs alongside the site</span>
+<p>The plumbing. Nothing glamorous — but if a client in Toronto can't book a 7pm slot and pay in Canadian dollars, nothing else matters.</p>
 <ul>
-<li>Booking page that <b>takes payment at the moment of booking</b></li>
-<li>Automatic time-zone handling — never book by hand</li>
-<li>Intake form: birth <b>date, exact time, city</b> (all three, always)</li>
-<li>Zoom with recording · shared inbox · WhatsApp</li>
-<li>Stripe + a backup card processor, ready to switch</li>
+<li>Booking that <b>takes payment at the moment of booking</b></li>
+<li>Automatic time-zones — never book by hand</li>
+<li>Intake: birth <b>date, exact time, city</b> — all three, always</li>
+<li>Recorded video calls · shared inbox · WhatsApp</li>
+<li>Stripe + a backup processor, ready to switch</li>
 </ul>
 <span class="pill">Calendly or Acuity — never Cal.com</span>
-</div>
-</div>
+</div></div>
 
-<!-- 3 -->
-<div class="stop l t">
-<div class="card">
-<h3>🔥 First clients — for free</h3>
-<span class="when">Weeks 6–10 · before a single ad runs</span>
-<p>He already has clients in the UK and France who trust him. That is a warm, free asset and it is where our first money comes from.</p>
+<div class="stop l t"><div class="card">
+<h3>🔥 First clients — free</h3><span class="when">Weeks 6–10 · before a single ad runs</span>
+<p>The practice already has warm clients who trust it. That is a free asset and it is where the first money comes from.</p>
 <ul>
-<li>Personal message to <b>every past client</b> — new brand, new link</li>
+<li>Personal outreach to <b>every past client</b> — new brand, new link</li>
 <li>Collect <b>10 real reviews</b> with written permission</li>
-<li>Ask each one to tell a friend</li>
+<li>Ask each for one referral</li>
 <li>Target: <b>15–25 paid readings, £0 on ads</b></li>
 </ul>
 <span class="pill">Referrals are the #1 channel for every solo astrologer we studied</span>
-</div>
-<div class="node">3<small>Warm start</small></div>
-</div>
+</div><div class="node">3<small>Warm start</small></div></div>
 
-<!-- 4 -->
-<div class="stop r t">
-<div class="node">4<small>Engine</small></div>
-<div class="card">
-<h3>🎥 The content engine</h3>
-<span class="when">Week 8 onwards · never stops</span>
-<p>This is the real growth engine, and it's free. Every small astrologer who broke past $10K/month did it with video, not ads.</p>
+<div class="stop r t"><div class="node">4<small>Engine</small></div><div class="card">
+<h3>🎥 The content engine — knowledge-led</h3><span class="when">Week 8 onwards · never stops</span>
+<p>A face still fronts the videos (people are drawn to a person), but the authority is the <b>subject and the study</b>, not a personality. The presenter is a role — it can be any qualified voice, in any language.</p>
 <ul>
-<li>His face, 45–90 seconds, answering <b>one real question</b></li>
+<li>Short videos answering <b>one universal, emotionally-charged question</b>: "will this relationship last?", "is this the right move?", "what does my year hold?"</li>
+<li>Sensitive topics that relate to nearly everyone — that's the pull</li>
 <li>4–5 a week → TikTok + Reels + Shorts, same clips</li>
-<li>7 teach · 2 prove · 1 sell — never sell hard on camera</li>
-<li>Every video ends: <b>"free birth chart at our site"</b></li>
-<li>Each video also becomes a blog post, so Google finds us</li>
+<li>7 teach · 2 prove · 1 offer · every one ends "free answers at our site"</li>
+<li>Each becomes a blog post, so Google finds us too</li>
 </ul>
-<span class="pill">He records 10 in one sitting · we do the rest</span>
-</div>
-</div>
+<span class="pill">The knowledge is the star — so the business never rests on one face</span>
+</div></div>
 
 <div class="stop"><div class="gate">
 <h4>🚦 CHECKPOINT — Day 90</h4>
-<p>We do not scale until all four are true: cost to win a client is <b>under 40% of the sale</b> · <b>1 in 4 clients come back</b> within 60 days · refunds <b>under 5%</b> · <b>10 real reviews</b> live. Fail two, and we fix the business instead of buying more traffic.</p>
+<p>We don't scale until all four are true: winning a client costs <b>under 40% of the sale</b> · <b>1 in 4 return</b> within 60 days · refunds <b>under 5%</b> · <b>10 real reviews</b> live. Fail two, and we fix the business instead of buying more traffic.</p>
 </div></div>
 
-<!-- 5 -->
-<div class="stop l g">
-<div class="card">
-<h3>💰 Paid ads — small and surgical</h3>
-<span class="when">Month 3+ · only after the checkpoint</span>
-<p><b>The uncomfortable truth:</b> the big platforms pay others $75–175 to bring them a client, and buying that client on Google costs $109–182. Ads barely break even here. So they are an accelerator, never the engine.</p>
+<div class="stop l g"><div class="card">
+<h3>💰 Paid ads — small &amp; surgical</h3><span class="when">Month 3+ · only after the checkpoint</span>
+<p><b>The honest truth:</b> the big platforms pay others $75–175 to bring them a client, and buying that client on Google costs $109–182. Ads barely break even here — so they're an accelerator, never the engine.</p>
 <ul>
-<li>Google Search only at first — <b>buying words, not curious words</b></li>
+<li>Google Search first — <b>buying intent, not curiosity</b></li>
 <li>"vedic astrologer consultation" ✅ &nbsp; "daily horoscope" ❌</li>
-<li>Then Microsoft/Bing (cheaper, older, richer audience)</li>
-<li>Facebook last, and only once something already sells</li>
-<li>Separate card. Second admin. Verified early.</li>
+<li>Then Microsoft/Bing (cheaper, older, richer)</li>
+<li>Facebook last, once something already sells</li>
+<li><b>Separate card. Second admin.</b> (explained just below)</li>
 </ul>
-<span class="pill">Start $60/day · never scale on a hunch</span>
-</div>
-<div class="node">5<small>Fuel</small></div>
-</div>
+<span class="pill">Start ~$60/day · never scale on a hunch</span>
+</div><div class="node">5<small>Fuel</small></div></div>
 
-<!-- 6 -->
-<div class="stop r b">
-<div class="node">6<small>Repeat income</small></div>
-<div class="card">
-<h3>🔁 Monthly plans + Founders</h3>
-<span class="when">Months 3–6 · after ~100 clients served</span>
-<p>Subscriptions keep trust — they can't create it. So this only opens once people already love his readings.</p>
+<div class="stop r b"><div class="node">6<small>Repeat income</small></div><div class="card">
+<h3>🔁 Monthly plans + Founders</h3><span class="when">Months 3–6 · after ~100 clients served</span>
+<p>Plans keep trust; they can't create it. So this opens only once people already love the readings.</p>
 <ul>
-<li>Three plans · we push <b>the middle one</b> hardest</li>
-<li>Top plan capped at ~40 people — his calendar is finite</li>
+<li>Three tiers — we push <b>the middle</b> hardest</li>
+<li>Top tier capped (~40 people) — the calendar is finite</li>
 <li><b>150 Founder spots</b> → a one-time cash injection</li>
-<li>Billing done right: cancel link in every receipt, reminder before every charge, one-click cancel</li>
+<li>Billing done right + a <b>Fair Usage Policy</b> so nobody abuses the lifetime deal</li>
 </ul>
-<span class="pill">This cash funds stops 7 &amp; 8 — with no extra equity given away</span>
-</div>
-</div>
+<span class="pill">Full pricing + the Fair Usage Policy below ↓</span>
+</div></div>
 
-<!-- 7 -->
-<div class="stop l r">
-<div class="card">
-<h3>💎 Gemstones &amp; remedies</h3>
-<span class="when">Months 6–12</span>
-<p>AstroTalk's stone shop went from zero to ~$24M/year in 14 months. Ordinary crystal shops make $2–5M. The whole difference: <b>the astrologer recommends the stone inside a paid reading, and the shop sends it.</b></p>
+<div class="stop l r"><div class="card">
+<h3>💎 The Prescribed Stone</h3><span class="when">Months 6–12 · our signature</span>
+<p>Not a shop. The stone is matched to the client's chart in a paid reading, certified, <b>registered to them</b>, delivered with a personal explainer, and it brings a follow-up reading with it. Nobody else does this.</p>
 <ul>
-<li>Order-on-demand first — <b>no stock, no risk</b></li>
-<li>Every stone ships with a real lab certificate</li>
+<li>Certified genuine + registered with a unique ID</li>
 <li>Sold as <b>jewellery and tradition</b> — never as medicine</li>
-<li>Tell the bank <b>before</b> we start. Never add it quietly.</li>
+<li>A short recorded "why this stone for your chart"</li>
+<li>A built-in check-in reading 60–90 days later</li>
 </ul>
-<span class="pill">Needs readings first — that's why it's late</span>
-</div>
-<div class="node">7<small>Products</small></div>
-</div>
+<span class="pill">Full model, pricing, shipping &amp; packaging below ↓</span>
+</div><div class="node">7<small>Signature</small></div></div>
 
 <div class="stop"><div class="gate">
-<h4>🚦 CHECKPOINT — The ceiling</h4>
-<p>One astrologer maxes out near <b>$26,000/month</b>. There is no way around it. Everything past this point requires <b>more astrologers</b> — which is why the partnership paper must permit that <b>from day one</b>.</p>
+<h4>🚦 The old ceiling — and why it isn't ours</h4>
+<p>One person doing <b>only</b> live 1:1 calls maxes near <b>$26,000/month</b>. That's the wall for the <i>old</i> model — and exactly why we don't build that way. Written &amp; recorded readings, content-driven inbound, memberships, the gemstone line and extra astrologers all carry income past it. <b>We break the ceiling on purpose.</b></p>
 </div></div>
 
-<!-- 8 -->
-<div class="stop r gr">
-<div class="node">8<small>Scale</small></div>
-<div class="card">
-<h3>🚀 The second astrologer</h3>
-<span class="when">Month 9–12+ · where it stops being a job</span>
-<p>Until now the business is one man's calendar. This is the step that turns it into a company — and it's the entire reason a 50% stake is worth taking.</p>
+<div class="stop r gr"><div class="node">8<small>Scale</small></div><div class="card">
+<h3>🚀 More astrologers</h3><span class="when">Month 9–12+ · one calendar becomes a company</span>
+<p>Until now the business is one calendar. This is the step that makes it a real company — and the reason a 50% stake is worth taking.</p>
 <ul>
-<li>Recruit and vet · he trains and approves them</li>
-<li>Pay per reading, not salary — no fixed cost risk</li>
+<li>Recruit &amp; vet · trained and approved to our method</li>
+<li>Paid per reading, not salary — no fixed-cost risk</li>
 <li>Our brand takes the bookings, not their personal name</li>
-<li>Now the gemstone shop scales with them too</li>
+<li>The gemstone line and content scale with them too</li>
 </ul>
-<span class="pill">This is the AstroTalk path, at small scale</span>
-</div>
-</div>
+<span class="pill">Same path AstroTalk walked — at small, controlled scale</span>
+</div></div>
 
 </div>
 </div></section>
 
-<!-- ================= SITEMAP ================= -->
+<!-- ============ CARD / ADMIN EXPLAINER ============ -->
+<section style="padding-top:0"><div class="wrap">
+<div class="grid g2">
+  <div class="res b2">
+    <h3>💳 "Separate card" — what &amp; why</h3>
+    <p style="margin:0 0 8px;color:var(--ink2);font-size:14.5px">A bank card used <b>only</b> to pay for ads — nothing else, ever.</p>
+    <ul>
+      <li>Google and Facebook link accounts by their <b>shared payment card</b></li>
+      <li>If one account is banned, every other account on the same card can be banned with it</li>
+      <li>A dedicated card <b>fences off</b> that risk from the rest of the business</li>
+    </ul>
+  </div>
+  <div class="res r2">
+    <h3>👥 "Second admin" — what &amp; why</h3>
+    <p style="margin:0 0 8px;color:var(--ink2);font-size:14.5px">A second trusted person with admin access to the ad accounts.</p>
+    <ul>
+      <li>If the main person's login gets locked, the accounts can die with it</li>
+      <li>A second admin keeps them running and can <b>file the appeal</b></li>
+      <li>Costs nothing, set up in 5 minutes, saves the whole ad operation</li>
+    </ul>
+  </div>
+</div>
+</div></section>
+
+<!-- ============ SITEMAP ============ -->
 <section style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
-<span class="eyebrow">Stop 1, in detail</span>
+<span class="eyebrow">Stop 1 in detail</span>
 <h2>The website — one brand, three countries</h2>
-<p class="lede">We do <b>not</b> build three websites. We build one, and it adapts: the visitor's country decides the currency they see, the times they're offered, and the trust signals shown to them. Same brand, same astrologer, three front doors.</p>
+<p class="lede">We build <b>one</b> site that adapts. And the free entry point is <b>not</b> just a birth-chart calculator — that mostly attracts people already into astrology. We lead with the <b>questions everyone has</b>, which pulls a far wider age range across all three countries.</p>
 
-<div class="tree">
-  <div class="tier"><div class="box root">✦ ourbrand.com</div></div>
-  <div class="drop"></div>
-  <div class="tier"><div class="box" style="border-color:var(--violet);background:var(--violet-l)">🎯 Detects the visitor's country<small>currency · time zone · local trust cues</small></div></div>
-  <div class="bracket"><span></span><span></span><span></span></div>
-
-  <div class="tier">
-    <div class="box geo us">🇺🇸 /us<small>USD $ · 12-hour clock<br>ET / PT slots</small></div>
-    <div class="box geo uk">🇬🇧 /uk<small>GBP £ · 24-hour clock<br>GMT/BST slots</small></div>
-    <div class="box geo ca">🇨🇦 /ca<small>CAD $ · bilingual-ready<br>ET / PT slots</small></div>
-  </div>
-
-  <div class="bracket" style="transform:rotate(180deg)"><span></span><span></span><span></span></div>
-
-  <div class="tier">
-    <div class="box">🏠 Home</div>
-    <div class="box">🔮 Services &amp; prices</div>
-    <div class="box">👤 About him<small>credentials · face · story</small></div>
-    <div class="box">📅 Book &amp; pay</div>
-  </div>
-  <div style="height:14px"></div>
-  <div class="tier">
-    <div class="box" style="border-color:var(--gold);background:var(--gold-l)">⭐ FREE birth chart<small>the lead magnet</small></div>
-    <div class="box">✍️ Blog<small>one post per video</small></div>
-    <div class="box">💬 Reviews</div>
-    <div class="box">❓ FAQ</div>
-  </div>
-
-  <div class="shared">
-    <h4>Shared across all three countries — built once</h4>
-    <div class="tier">
-      <div class="box" style="font-size:13px">📜 Terms</div>
-      <div class="box" style="font-size:13px">🔒 Privacy</div>
-      <div class="box" style="font-size:13px">↩️ Refunds &amp; cancelling</div>
-      <div class="box" style="font-size:13px">🍪 Cookies</div>
-      <div class="box" style="font-size:13px">✉️ Contact<small>a real inbox</small></div>
-      <div class="box" style="font-size:13px">✅ Consent boxes<small>recording + private topics</small></div>
+<div class="panel">
+  <div class="grid g3">
+    <div class="res b2"><h3>🇺🇸 United States</h3>
+      <p style="margin:0 0 8px;color:var(--ink2);font-size:14.5px">Biggest market, highest prices.</p>
+      <ul>
+        <li>Prices in <b>USD</b>, no conversion at checkout</li>
+        <li>Slots in <b>Eastern &amp; Pacific</b> time</li>
+        <li><b>Recording consent is a legal must</b> — a crime without it in several states</li>
+        <li>Never imply we know a visitor's health, money or beliefs</li>
+      </ul>
+    </div>
+    <div class="res r2"><h3>🇬🇧 United Kingdom</h3>
+      <p style="margin:0 0 8px;color:var(--ink2);font-size:14.5px">Strictest ad rules of the three.</p>
+      <ul>
+        <li>Prices in <b>GBP</b>, VAT-ready</li>
+        <li><b>No fake discounts, urgency or reviews</b> — fines reach 10% of worldwide turnover</li>
+        <li>We must <b>hold certification for the fortune-telling / astrology services</b> before any claim goes live</li>
+        <li>14-day cancel rights → the "start now" tick-box</li>
+      </ul>
+    </div>
+    <div class="res t2"><h3>🇨🇦 Canada</h3>
+      <p style="margin:0 0 8px;color:var(--ink2);font-size:14.5px">Easiest to enter, US-like buyer.</p>
+      <ul>
+        <li>Prices in <b>CAD</b> — never make them do the maths</li>
+        <li>Strictest email rules anywhere: <b>consent, our postal address, instant unsubscribe</b></li>
+        <li>If a client refuses recording, we still serve them</li>
+        <li>Quebec has extra data rules — worth knowing early</li>
+      </ul>
     </div>
   </div>
-</div>
-
-<div class="grid g3" style="margin-top:26px">
-  <div class="res b2">
-    <h3>🇺🇸 United States</h3>
-    <p style="margin:0 0 8px;color:var(--ink2);font-size:14.5px">Our biggest market and highest prices.</p>
-    <ul>
-      <li>Prices in <b>USD</b>, no conversion at checkout</li>
-      <li>Slots shown in <b>Eastern and Pacific</b> time</li>
-      <li><b>Recording consent is a legal must</b> — several states make it a crime without it</li>
-      <li>Never claim to know a visitor's health, money or beliefs</li>
-    </ul>
-  </div>
-  <div class="res r2">
-    <h3>🇬🇧 United Kingdom</h3>
-    <p style="margin:0 0 8px;color:var(--ink2);font-size:14.5px">Strictest advertising rules of the three.</p>
-    <ul>
-      <li>Prices in <b>GBP</b>, VAT-ready</li>
-      <li><b>No fake discounts, no fake urgency, no fake reviews</b> — fines reach 10% of worldwide turnover</li>
-      <li>We must <b>hold proof of his credentials</b> before any claim goes live</li>
-      <li>14-day cancel rights → the "start now" tick-box</li>
-    </ul>
-  </div>
-  <div class="res t2">
-    <h3>🇨🇦 Canada</h3>
-    <p style="margin:0 0 8px;color:var(--ink2);font-size:14.5px">Easiest to enter, US-like buyer.</p>
-    <ul>
-      <li>Prices in <b>CAD</b> — never make them do the maths</li>
-      <li>Email rules are the strictest anywhere: <b>consent, our postal address, instant unsubscribe</b></li>
-      <li>If a client refuses recording, we must still serve them</li>
-      <li>Quebec has extra data rules — worth knowing early</li>
-    </ul>
-  </div>
+  <div class="note violet" style="margin-top:22px"><b>The free entry point, broadened:</b> a short "your big question" path — love, money, career, the year ahead — with the birth chart as one route inside it. It captures an email from a wide audience; the emails, not the ads, book the readings. This is the astro.com model that has worked for 40 years, opened up beyond the astrology crowd.</div>
 </div>
 </div></section>
 
-<!-- ================= RESOURCES ================= -->
+<!-- ============ PLANS & PRICING ============ -->
 <section><div class="wrap">
-<span class="eyebrow">What it takes</span>
-<h2>The resources we need</h2>
-<p class="lede">People, tools and money — mapped to the stop where each one is actually needed. Nothing gets bought before it earns its place.</p>
+<span class="eyebrow">The offer</span>
+<h2>Plans &amp; pricing — written clearly</h2>
+<p class="lede">All whole, round numbers — never .99 or a 9-ending. In this field round numbers read as a professional fee; charm prices read as a discount store and cheapen a premium astrologer. These are working figures — the structure matters more than the exact number.</p>
 
-<div class="grid g3">
-  <div class="res">
-    <h3>👥 People</h3>
-    <div class="cost">$900–2,800<span style="font-size:13px;font-weight:600;color:var(--ink3)">/month</span></div>
-    <ul>
-      <li><b>Helper #1 — from stop 2.</b> Bookings, messages, collecting birth details, sending recordings.</li>
-      <li><b>Helper #2 — from stop 5.</b> Reports, reviews, subscription admin, refunds.</li>
-      <li><b>Video editor — from stop 4.</b> Cuts his raw clips into 4–5 posts a week.</li>
-      <li><b>Golden rule:</b> helpers never give readings. "Let me book that with our astrologer."</li>
-    </ul>
-  </div>
+<h3 style="font-family:var(--disp);font-size:19px;margin:26px 0 10px">1 · One-off readings</h3>
+<div class="tbl"><table>
+<tr><th>Reading</th><th>Length</th><th>Price</th><th>What's included</th></tr>
+<tr><td><b>Insight</b></td><td>30 min</td><td class="price">$95</td><td>One focus question. Live video + the recording.</td></tr>
+<tr class="mid"><td><b>Full Reading</b> ⭐ most booked</td><td>60 min</td><td class="price">$195</td><td>Three life areas. Live + recording + short written summary.</td></tr>
+<tr><td><b>Deep Dive</b></td><td>90 min</td><td class="price">$325</td><td>Full chart + 12-month outlook. Live + recording + written summary + one follow-up question.</td></tr>
+</table></div>
+<div class="note gold"><b>The middle one is built to win.</b> Three real choices are always shown together — the 60-minute Full Reading is the best value-per-minute and looks it, so most people land there. The competitor field is jammed at $300–$360 and the best names are booked months out, so as reviews build, Full can rise to $225 and Deep Dive to $375–$400.</div>
 
-  <div class="res t2">
-    <h3>🧰 Tools</h3>
-    <div class="cost">$120–300<span style="font-size:13px;font-weight:600;color:var(--ink3)">/month</span></div>
-    <ul>
-      <li><b>Booking:</b> Calendly or Acuity — pays at booking, handles time zones</li>
-      <li><b>Calls:</b> Zoom, paid tier (needed for recording)</li>
-      <li><b>Money:</b> Stripe + a backup processor + PayPal</li>
-      <li><b>Inbox &amp; email:</b> one shared inbox; Brevo for email (EU-hosted, simpler privacy)</li>
-      <li><b>Phone:</b> a business number + WhatsApp Business</li>
-    </ul>
-  </div>
+<h3 style="font-family:var(--disp);font-size:19px;margin:34px 0 10px">2 · Monthly plans <span style="font-weight:500;font-size:14px;color:var(--ink3)">(open after ~100 clients)</span></h3>
+<div class="tbl"><table>
+<tr><th>Plan</th><th>Monthly</th><th>6 months</th><th>1 year</th><th>What the member gets</th></tr>
+<tr><td><b>Monthly Guidance</b></td><td class="price">$20</td><td>$110</td><td>$200</td><td>A personal written forecast every month from their own chart, plus one question a month by message.</td></tr>
+<tr class="mid"><td><b>Quarterly</b> ⭐ push this</td><td class="price">$80</td><td>$440</td><td>$800</td><td>Above + one 45-min live session every 3 months + priority booking + 10% off extra readings.</td></tr>
+<tr><td><b>Inner Circle</b> · cap ~40</td><td class="price">$200</td><td>$1,100</td><td>$2,000</td><td>A 45-min live session every month + voice-note questions between sessions.</td></tr>
+</table></div>
+<p style="color:var(--ink3);font-size:14px;margin-top:8px">The yearly figure is simply the annual price — we never cross out a fake "was" price. Inner Circle is capped because each seat eats real calendar time; seats are managed like limited stock.</p>
 
+<h3 style="font-family:var(--disp);font-size:19px;margin:34px 0 10px">3 · Founders' Circle — one-time, lifetime</h3>
+<div class="grid g2">
   <div class="res g2c">
-    <h3>💵 Money</h3>
-    <div class="cost">$9K–27K<span style="font-size:13px;font-weight:600;color:var(--ink3)">to reach day 90</span></div>
+    <h3>The deal</h3>
+    <div class="cost">150 seats · $1,000 once</div>
     <ul>
-      <li><b>Slow &amp; safe:</b> ~$2,900/month → about $9K to the checkpoint</li>
-      <li><b>Fast:</b> ~$8,800/month → about $27K</li>
-      <li><b>Always keep 4–6 weeks of income in the bank</b> in case a processor holds funds</li>
-      <li><b>My advice:</b> go slow. Since ads barely break even, the patient route is also the more likely one to work.</li>
-    </ul>
-  </div>
-</div>
-
-<div class="grid g2" style="margin-top:16px">
-  <div class="res r2">
-    <h3>🎓 What we need from your partner</h3>
-    <ul>
-      <li>His <b>certification documents</b> — before any claim goes on the site (UK law)</li>
-      <li>His <b>past client list</b> — this is our first 15–25 sales, for free</li>
-      <li>An honest number: <b>how many readings a week can he do without burning out?</b> Every plan depends on this.</li>
-      <li><b>His face on camera, weekly.</b> Non-negotiable — he is the product.</li>
-      <li>Sign-off that we may <b>add other astrologers later</b>.</li>
+      <li>Sold in two honest waves (50, then 100) with a real visible counter</li>
+      <li>≈ <b>$150,000</b> of launch capital — funds the gemstone line &amp; the 2nd astrologer, <b>no extra equity given away</b></li>
+      <li><b>They get:</b> lifetime Monthly-Guidance content · 3 live 45-min sessions (use within 24 months) · permanent 20% off readings &amp; store · founder status + first access to new things</li>
     </ul>
   </div>
   <div class="res gr2">
-    <h3>🛡️ Guard rails — never break these</h3>
+    <h3>Fair Usage Policy — so nobody abuses it</h3>
     <ul>
-      <li><b>Never promise a result.</b> No "your ex returns", no guaranteed money, no curing anxiety.</li>
-      <li><b>Never fake anything</b> — not a discount, not a countdown, not a review.</li>
-      <li><b>Never a "free" reading that quietly bills them.</b> This destroyed Miss Cleo and got Nebula sued.</li>
-      <li><b>Never record without a spoken "yes"</b> on the recording itself.</li>
-      <li><b>Never sell a stone as medicine.</b> Jewellery and tradition only.</li>
+      <li><b>Fixed sessions, not unlimited</b> — 3 in 24 months, can't be stockpiled or claimed all at once</li>
+      <li><b>One question a month</b>, not a flood</li>
+      <li><b>Personal use only</b> — one person, one account, no sharing, reselling or gifting</li>
+      <li><b>Fair-notice booking</b>, subject to normal availability</li>
+      <li><b>Format may evolve</b> — we're not locked to one delivery method forever</li>
+      <li><b>Abuse ends access</b> — reselling or fraud revokes it</li>
     </ul>
   </div>
 </div>
 </div></section>
 
+<!-- ============ GEMSTONES ============ -->
+<section style="background:#fff;border-top:1px solid var(--line)"><div class="wrap">
+<span class="eyebrow">Stop 7 in detail · our unique selling point</span>
+<h2>The Prescribed Stone</h2>
+<p class="lede">Every other seller treats a gemstone as a product on a shelf. We make it the <b>physical anchor of a relationship</b> — and that is something nobody else offers. It's a service-and-product hybrid, so it never competes on stone price with ordinary crystal shops.</p>
+
+<div class="grid g2">
+  <div class="res r2">
+    <h3>How it works, end to end</h3>
+    <ul>
+      <li><b>Matched to the chart</b> — chosen for the client's real chart inside a paid reading, never sold cold</li>
+      <li><b>Independently certified</b> — a third-party lab proves it's genuine and untreated</li>
+      <li><b>Registered to the client</b> — a unique ID + printed certificate ties the stone to their chart in our registry. It's <i>their</i> stone, on record</li>
+      <li><b>Personally explained</b> — a short recorded video: why this stone for this chart</li>
+      <li><b>Follow-up built in</b> — a check-in reading 60–90 days later comes with it</li>
+    </ul>
+  </div>
+  <div class="res r2">
+    <h3>Why it beats a normal shop</h3>
+    <p style="margin:0 0 10px;color:var(--ink2);font-size:14.5px">A plain stone competes on price with every crystal seller online. A <b>chart-matched, certified, registered, personally-prescribed</b> stone with a follow-up reading competes with <b>nobody</b> — because nobody offers it.</p>
+    <ul>
+      <li>Justifies a premium price</li>
+      <li>Brings the client back for the follow-up</li>
+      <li>Turns a one-time sale into an ongoing relationship — where the real money is</li>
+    </ul>
+    <p style="margin:12px 0 0;color:var(--ink3);font-size:13.5px">Not pure order-on-demand: we hold a curated stock of the common chart-relevant stones so most orders ship fast; rare or bespoke stones are sourced to order.</p>
+  </div>
+</div>
+
+<h3 style="font-family:var(--disp);font-size:19px;margin:30px 0 10px">Gemstone pricing</h3>
+<div class="tbl"><table>
+<tr><th>Tier</th><th>Example</th><th>Price band</th></tr>
+<tr><td><b>Accessible</b></td><td>Silver-set, smaller carat, entry planetary stone</td><td class="price">$90 – $250</td></tr>
+<tr class="mid"><td><b>Signature</b> ⭐</td><td>Mid-grade certified planetary gemstone</td><td class="price">$300 – $700</td></tr>
+<tr><td><b>Premium</b></td><td>Fine certified stone (e.g. good-origin sapphire or ruby)</td><td class="price">$800 – $2,500+</td></tr>
+</table></div>
+<p style="color:var(--ink3);font-size:14px;margin-top:8px">Jewellery margins run ~2× cost at the low end, 4–5× for finished pieces. Our premium is justified by certification, chart-matching and the follow-up — never by inflating the stone.</p>
+
+<div class="grid g2" style="margin-top:20px">
+  <div class="res b2">
+    <h3>📦 Shipping</h3>
+    <ul>
+      <li><b>Always fully insured, tracked, signature-required</b> — high-value items with certificates</li>
+      <li><b>In-stock stones:</b> dispatched in 3–5 business days</li>
+      <li><b>Bespoke / sourced:</b> 2–4 weeks, shown clearly before purchase</li>
+      <li>Insured courier to US/UK/CA; customs &amp; duty shown up front — no surprises at the door</li>
+    </ul>
+  </div>
+  <div class="res r2">
+    <h3>🎁 What goes in the box</h3>
+    <ul>
+      <li>The stone, in a proper jewellery box</li>
+      <li>The <b>independent lab certificate</b> (genuine, untreated)</li>
+      <li>A <b>"Your Stone &amp; Your Chart"</b> card — why this stone, in the language of tradition</li>
+      <li>Traditional first-wearing guidance (day &amp; finger, per Vedic custom)</li>
+      <li>A care card + a tamper-evident seal</li>
+    </ul>
+    <div class="chips"><span class="chip no">✕ No health claims</span><span class="chip no">✕ Never "scientific"</span><span class="chip no">✕ Never "cure / heal / align"</span></div>
+  </div>
+</div>
+<div class="note rose"><b>The one hard line on stones:</b> we sell jewellery, tradition and genuine certification — nothing more. Nothing in the box, on the site, or in any reading says a stone treats, heals, cures or improves any condition of body or mind. UK law bans "helps with," not just "cures," and there is no scientific proof to stand on — so we never claim any. This is a true, honest story, and it's all we ever need.</div>
+</div></section>
+
+<!-- ============ RESOURCES ============ -->
+<section><div class="wrap">
+<span class="eyebrow">What it takes</span>
+<h2>The tools — and exactly what each does</h2>
+<p class="lede">Every tool tied to the job it does. Nothing gets bought before it earns its place.</p>
+<div class="tbl"><table>
+<tr><th>Tool</th><th>Job</th><th>What it actually does for us</th></tr>
+<tr><td><b>Calendly / Acuity</b></td><td>Booking</td><td>Client picks a time, pays on the spot, gets their correct local time automatically; sends reminders so they show up.</td></tr>
+<tr><td><b>Zoom (paid)</b></td><td>The reading</td><td>Runs the video call and records it, so we can send the recording afterwards.</td></tr>
+<tr><td><b>Stripe</b></td><td>Take payments</td><td>Charges cards and runs the monthly plans. Our main money-in tool.</td></tr>
+<tr><td><b>Backup processor</b></td><td>Safety net</td><td>A second card company ready to switch to if Stripe ever freezes us — so the business never stops.</td></tr>
+<tr><td><b>PayPal</b></td><td>Second option</td><td>A familiar checkout choice some clients prefer.</td></tr>
+<tr><td><b>Brevo</b></td><td>Email</td><td>Sends forecasts, newsletters and reminders. Stores data in the EU, which keeps privacy simple.</td></tr>
+<tr><td><b>Shared inbox</b></td><td>Messages</td><td>One place where all email, chat and WhatsApp land, so nobody gives a client a different answer.</td></tr>
+<tr><td><b>Business phone + WhatsApp</b></td><td>Contact</td><td>A proper number for calls/texts, and WhatsApp for UK &amp; international clients who live on it.</td></tr>
+<tr><td><b>Ethoca (free)</b></td><td>Stop complaints</td><td>Shows our name &amp; logo in the client's banking app so they recognise the charge and don't dispute it.</td></tr>
+<tr><td><b>Lab certification</b></td><td>Gemstones</td><td>An independent lab proves each stone is genuine &amp; untreated — the trust behind the Prescribed Stone.</td></tr>
+</table></div>
+
+<div class="grid g3" style="margin-top:24px">
+  <div class="res">
+    <h3>👥 People</h3><div class="cost">$900–2,800<span style="font-size:13px;font-weight:600;color:var(--ink3)">/month</span></div>
+    <ul>
+      <li><b>Support #1 (from stop 2)</b> — bookings, messages, collecting birth details, sending recordings</li>
+      <li><b>Support #2 (from stop 5)</b> — reports, reviews, subscription admin, refunds</li>
+      <li><b>Video editor (from stop 4)</b> — cuts raw clips into 4–5 posts a week</li>
+      <li><b>Golden rule:</b> support never gives a reading — "let me book that with an astrologer"</li>
+    </ul>
+  </div>
+  <div class="res t2">
+    <h3>🧰 Tools total</h3><div class="cost">$120–300<span style="font-size:13px;font-weight:600;color:var(--ink3)">/month</span></div>
+    <ul>
+      <li>Booking + calls + email + inbox + phone + hosting</li>
+      <li>Scales with list size, not with headcount</li>
+      <li>Everything above is chosen and priced; nothing speculative</li>
+    </ul>
+  </div>
+  <div class="res g2c">
+    <h3>💵 Money to day 90</h3><div class="cost">$9K–27K</div>
+    <ul>
+      <li>Lean start ~$2,900/mo → about $9K to the checkpoint</li>
+      <li>Fast ~$8,800/mo → about $27K</li>
+      <li>Always keep <b>4–6 weeks of income</b> in reserve for processor holds</li>
+      <li>Founders' Circle (~$150K) then funds gemstones + 2nd astrologer</li>
+    </ul>
+  </div>
+</div>
+
+<div class="note violet" style="margin-top:22px"><b>What the business needs on file:</b> certification for the astrology / fortune-telling services it offers in the UK (advertising rules require the evidence behind any claim <b>before</b> it's published) · an honest weekly reading capacity · the warm client list for the first sales · and written agreement that the business may add more astrologers over time.</div>
+</div></section>
+
 <footer><div class="wrap">
-Astro-Global · <a href="launch.html">the detailed plan</a> · <a href="sheet.html">copy into Sheets</a> · <a href="index.html">the research</a>
+Astro-Global · <a href="assets/astro-global-playbook.pdf" download>the Operating Playbook (PDF)</a> · <a href="launch.html">the detailed plan</a> · <a href="sheet.html">copy into Sheets</a>
 </div></footer>
 
 </body></html>
